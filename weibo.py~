@@ -9,7 +9,7 @@ from weibo import APIClient
 APP_KEY = '' # app key
 APP_SECRET = '' # app secret
 CALLBACK_URL = '' # callback url
-AUTH_URL = 'https://api.weibo.com/oauth2/authorize'
+AUTH_URL = ''
 USERID = '' # userid
 PASSWD = '' #password
 
