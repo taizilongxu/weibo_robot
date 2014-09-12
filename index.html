@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Weibo robot : 用新浪API实现的与电脑交互的机器人">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Weibo robot</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/taizilongxu/weibo_robot">View on GitHub</a>
+
+          <h1 id="project_title">Weibo robot</h1>
+          <h2 id="project_tagline">用新浪API实现的与电脑交互的机器人</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/taizilongxu/weibo_robot/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/taizilongxu/weibo_robot/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>为了满足需要,做了这个程序~~没事玩玩的(最主要的是可以远程关机),手机或其他终端发送一个微博,主机就可以接受到命令,运行命令.项目地址<a href="https://github.com/taizilongxu/weibo_robot">https://github.com/taizilongxu/weibo_robot</a></p>
+
+<p>利用这个代码,可以实现自动化发送,评论,还可以收集微博的各种信息,也可以无限扩展啊</p>
+
+<p><img src="https://github.com/taizilongxu/weibo_robot/raw/master/pic/1.png" alt=""></p>
+
+<p><img src="https://github.com/taizilongxu/weibo_robot/raw/master/pic/2.png" alt=""></p>
+
+<h2>
+<a name="%E9%9C%80%E8%A6%81%E5%86%99%E5%85%A5%E7%9A%84%E5%8F%82%E6%95%B0" class="anchor" href="#%E9%9C%80%E8%A6%81%E5%86%99%E5%85%A5%E7%9A%84%E5%8F%82%E6%95%B0"><span class="octicon octicon-link"></span></a>需要写入的参数</h2>
+
+<div class="highlight highlight-python"><pre><span class="n">APP_KEY</span> <span class="o">=</span> <span class="s">''</span> <span class="c"># app key</span>
+<span class="n">APP_SECRET</span> <span class="o">=</span> <span class="s">''</span> <span class="c"># app secret</span>
+<span class="n">CALLBACK_URL</span> <span class="o">=</span> <span class="s">''</span> <span class="c"># callback url</span>
+<span class="n">AUTH_URL</span> <span class="o">=</span> <span class="s">'https://api.weibo.com/oauth2/authorize'</span>
+<span class="n">USERID</span> <span class="o">=</span> <span class="s">''</span> <span class="c"># userid</span>
+<span class="n">PASSWD</span> <span class="o">=</span> <span class="s">''</span> <span class="c">#password</span>
+</pre></div>
+
+<p>其中前3项需要自己注册新浪的API然后填入进程序,注意要和USERID是一个账号,否则后面的认证就会失败.</p>
+
+<p>后两项就是账号和密码了.</p>
+
+<h2>
+<a name="%E8%BF%90%E8%A1%8C" class="anchor" href="#%E8%BF%90%E8%A1%8C"><span class="octicon octicon-link"></span></a>运行</h2>
+
+<p>在开机启动时自动启动脚本,然后~~~就可以了</p>
+
+<h2>
+<a name="%E8%BF%87%E7%A8%8B%E9%9A%BE%E7%82%B9" class="anchor" href="#%E8%BF%87%E7%A8%8B%E9%9A%BE%E7%82%B9"><span class="octicon octicon-link"></span></a>过程难点</h2>
+
+<p>新浪的API需要返回一个code,网上大多数程序都是手动打开网页再获取code填入程序(这样一点也不科学!!)</p>
+
+<p>参考了<a href="http://blog.segmentfault.com/hongfei/1190000000343851">Python：模拟登录以获取新浪微博OAuth的code参数值</a>这篇文章,可以自动输入code了(哦也)</p>
+
+<h2>
+<a name="%E8%BF%90%E8%A1%8C%E4%BE%9D%E8%B5%96" class="anchor" href="#%E8%BF%90%E8%A1%8C%E4%BE%9D%E8%B5%96"><span class="octicon octicon-link"></span></a>运行依赖</h2>
+
+<p>Python 2.7</p>
+
+<p>weibo</p>
+
+<p>urllib2</p>
+
+<p>urllib</p>
+
+<p>time</p>
+
+<p>subprocess</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Weibo robot maintained by <a href="https://github.com/taizilongxu">taizilongxu</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
