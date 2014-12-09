@@ -11,7 +11,7 @@ tags: python
 
 ![](https://github.com/taizilongxu/weibo_robot/raw/master/pic/1.png)
 
-![](https://github.com/taizilongxu/weibo_robot/raw/master/pic/2.png)
+!w[](https://github.com/taizilongxu/weibo_robot/raw/master/pic/2.png)
 
 ##需要写入的参数
 
